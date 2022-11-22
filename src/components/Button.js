@@ -23,7 +23,7 @@ class Button extends React.Component {
       >
         {children}
       </button>
-    )
+    );
   }
 }
 
