@@ -56,4 +56,10 @@ describe('Testar o componente Pokédex', () => {
     userEvent.click(getButton);
     expect(elementPokemonName).toBeInTheDocument(1);
   });
+  test('Se é mostrado apenas um Pokémon por vez', () => {
+    renderWithRouter(<App />);
+
+
+    data-testid=pokemon-type-button
+  })
 });
