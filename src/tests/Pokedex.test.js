@@ -54,5 +54,7 @@ describe('Testar o componente Pokédex', () => {
     renderWithRouter(<App />);
     const getButton = screen.getByTestId('next-pokemon');
     const elementPokemonName = screen.getByTestId('pokemon-name');
+    userEvent.click(getButton);
+    expect(elementPokemonName).toBeInTheDocument(1);
   });
 });
