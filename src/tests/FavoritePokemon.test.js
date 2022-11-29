@@ -9,4 +9,3 @@ describe('Teste se o componente Favorite Pokemon renderiza elementos específico
     expect(notFavoritePokemon).toBeInTheDocument();
   });
 });
-
