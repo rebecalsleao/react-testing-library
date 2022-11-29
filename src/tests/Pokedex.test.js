@@ -71,11 +71,11 @@ describe('Testar o componente Pokédex', () => {
 
   test('Teste se a Pokédex contém um botão para resetar o filtro', () => {
     renderWithRouter(<App />);
-    const buttonAll = screen.getByRole('button', {
+    const buttonsAll = screen.getByRole('button', {
       name: /all/i,
     });
-    expect(buttonAll).toBeInTheDocument();
+    expect(buttonsAll).toBeInTheDocument();
     userEvent.click(buttonAll);
-    expect(buttonAll).toBeInTheDocument();
+    expect(buttonsAll).toBeInTheDocument();
   });
 });
