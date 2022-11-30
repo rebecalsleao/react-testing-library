@@ -44,8 +44,8 @@ describe('Testar o componente Pokédex', () => {
 
   test('Se é mostrado apenas um Pokémon por vez', () => {
     renderWithRouter(<App />);
-    const elementPokemonName = screen.getByTestId('pokemon-name');
-    expect(elementPokemonName).toHaveLength(1);
+    const pokemon = screen.getAllByTestId('pokemon-name');
+    expect(pokemon).toHaveLength(1);
   });
 
   test('Se existe um botão de filtragem para cada tipo de Pokémon, sem repetição', () => {
@@ -75,7 +75,7 @@ describe('Testar o componente Pokédex', () => {
       name: /all/i,
     });
     expect(buttonsAll).toBeInTheDocument();
-    userEvent.click(buttonAll);
+    userEvent.click(buttonsAll);
     expect(buttonsAll).toBeInTheDocument();
   });
 });
