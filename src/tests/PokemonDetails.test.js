@@ -14,6 +14,7 @@ describe('Testar o componente Pokemon Details', () => {
     });
     expect(nameOfDetails).toBeInTheDocument();
   });
+
   test('Se a seção de detalhes deve conter um heading h2 com o texto Summary', () => {
     const { history } = renderWithRouter(<App />);
     act(() => {
@@ -72,6 +73,7 @@ describe('Testar o componente Pokemon Details', () => {
     expect(secondLocation).toHaveTextContent(secondLocationString);
     expect(imgs[0] && imgs[1]).toBeInTheDocument();
   });
+
   test('Se o label do checkbox deve conter o texto Pokémon favoritado?', () => {
     const { history } = renderWithRouter(<App />);
     act(() => {
