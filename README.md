@@ -2,6 +2,7 @@
 ## About The Project
 
 #DESENVOLVIDO
+
 Nesse projeto verá testes para uma aplicação React, utilizando Jest e a biblioteca React Testing Library.
 
 A aplicação contém uma implementação da Pokédex.
